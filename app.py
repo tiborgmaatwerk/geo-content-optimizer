@@ -60,7 +60,7 @@ if api_key:
                 ref_urls_text = f"{ref_url_1}" + (f" en {ref_url_2}" if ref_url_2 else "")
                 keywords_text = keywords if keywords else "N/A"
 
-                prompt = f\"\"\"LET OP: Schrijf natuurlijk en mensvriendelijk — voer de richtlijnen uit zonder ze letterlijk woord-voor-woord in de tekst te herhalen.
+                prompt = f"""LET OP: Schrijf natuurlijk en mensvriendelijk — voer de richtlijnen uit zonder ze letterlijk woord-voor-woord in de tekst te herhalen.
 Lever de output in Markdown en houd altijd de tone of voice van de referentie-artikelen aan.
 
 Structuur & stijl (voorkeuren, maar wees natuurlijk):
@@ -85,7 +85,7 @@ Extra context:
 - Referentie: {ref_urls_text}
 - Keywords en focus: {keywords_text}
 
-Begin nu met het lezen van de URLs en herschrijf het artikel volledig volgens deze richtlijnen.\"\"\" 
+Begin nu met het lezen van de URLs en herschrijf het artikel volledig volgens deze richtlijnen.""" 
                 
                 try:
                     # Generate content - Google Search tool wordt automatisch gebruikt indien nodig
