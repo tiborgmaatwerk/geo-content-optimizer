@@ -6,7 +6,7 @@ import google.generativeai as genai
 import sys
 import os
 
-TEST_API_KEY = os.getenv('GEMINI_API_KEY', 'AIzaSyBRaGcP_2QpTsyjL2F8cQyrB58LGu4Bfwk')
+TEST_API_KEY = os.getenv('GEMINI_API_KEY', '')
 
 def find_working_model():
     print("=" * 70)

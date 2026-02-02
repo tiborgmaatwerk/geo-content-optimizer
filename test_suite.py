@@ -9,7 +9,7 @@ import os
 from datetime import datetime
 
 # Test configuratie
-TEST_API_KEY = os.getenv('GEMINI_API_KEY', 'AIzaSyBRaGcP_2QpTsyjL2F8cQyrB58LGu4Bfwk')
+TEST_API_KEY = os.getenv('GEMINI_API_KEY', '')
 TEST_TARGET_URL = "https://www.maatwerkonline.nl/blogs/zo-haal-je-het-maximale-uit-chatgpt-voor-je-contentcreatie/"
 TEST_REF_URL_1 = "https://www.maatwerkonline.nl/blogs/openai-zet-eerste-stap-richting-advertenties-in-chatgpt/"
 TEST_KEYWORDS = "ChatGPT voor je contentcreatie"
